@@ -1,14 +1,13 @@
-// Write your code here
 import './index.css'
 
 const LatestMatch = props => {
   const {latestMatchData} = props
   const {
     competingTeam,
+    competingTeamLogo,
     date,
     venue,
     result,
-    competingTeamLogo,
     firstInnings,
     secondInnings,
     manOfTheMatch,
@@ -17,7 +16,7 @@ const LatestMatch = props => {
 
   return (
     <div className="latest-match-container">
-      <h1 className="latest-match-heading">Latest Matches</h1>
+      <h1 className="latest-match-heading">Latest Match</h1>
       <div className="latest-match-card">
         <div className="latest-match-details-logo-container">
           <div className="latest-match-details-1">
@@ -28,8 +27,8 @@ const LatestMatch = props => {
           </div>
           <img
             src={competingTeamLogo}
-            className="latest-match-team-logo"
             alt={`latest match ${competingTeam}`}
+            className="latest-match-team-logo"
           />
         </div>
         <hr className="separator" />
